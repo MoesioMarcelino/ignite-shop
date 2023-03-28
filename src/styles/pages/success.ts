@@ -5,6 +5,7 @@ export const SuccessContainer = styled('main', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
+  gap: 32,
   margin: '0 auto',
   height: 656,
 
@@ -18,13 +19,11 @@ export const SuccessContainer = styled('main', {
     color: '$gray300',
     maxWidth: 560,
     textAlign: 'center',
-    marginTop: '2rem',
     lineHeight: 1.4,
   },
 
   a: {
     display: 'block',
-    marginTop: '5rem',
     fontSize: '$lg',
     color: '$green500',
     textDecoration: 'none',
@@ -38,19 +37,29 @@ export const SuccessContainer = styled('main', {
 
 export const ImageContainer = styled('div', {
   width: '100%',
-  maxWidth: 130,
+  maxWidth: 145,
   height: 145,
   background: '$backgroundImage',
-  borderRadius: 8,
+  borderRadius: '50%',
   padding: '0.25rem',
-  marginTop: '4rem',
+  boxShadow: '0px 0px 60px rgba(0, 0, 0, 0.8)',
 
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 
-
   img: {
     objectFit: 'cover',
+  },
+
+  '&:not(:first-child)': {
+    marginLeft: '-40px'
   }
 });
+
+export const ImageListContainer = styled('section', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '100%',
+})

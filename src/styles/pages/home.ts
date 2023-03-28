@@ -52,6 +52,13 @@ export const Product = styled('div', {
       fontWeight: 'bold',
       color: '$green300'
     },
+
+    img: {
+      transition: 'filter 0.2s',
+      '&:hover': {
+        filter: 'brightness(1.2)'
+      }
+    }
   },
 
   '&:hover': {
